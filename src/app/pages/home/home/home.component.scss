@@ -1,0 +1,121 @@
+.home-page {
+    //  background-image: url("/assets/images/background_image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: #ffffff;
+    height: calc(100vh - 122px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.file-height { 
+    height: calc(100vh - 122px);
+    //  overflow: auto;
+    //  margin-right: -10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+.margin-auto {
+    margin: auto;
+}
+
+.subsub-title{
+    font-size: medium !important;
+    color: #385185;
+    // text-align: center !important;
+    font-style: italic;
+    // margin-right: 14px;
+    text-align: left;
+    width: 100px;
+}
+.font-size100 {
+    font-size: 100px;
+}
+.header{
+    padding:10px;
+    font-size: medium;
+}
+
+.items-list{
+    flex-direction: column;
+    padding: 32px 16px;
+    // display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: gray;
+    // background-color: gray;
+    // color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hello-title{
+
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 30px;
+    text-align: left;
+}
+.sub-title {
+    padding-top: 0;
+    padding: 10px;
+    font-size: medium;
+    // color: cadetblue;
+    color: #385185;
+    text-align: left;
+}
+.elt-image {
+    width: 350px;
+    height: 100px;
+}
+.cardBody{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    white-space: normal;
+    word-wrap: break-word;
+    border-radius: 15px;
+    min-height: 60px;
+    // width: 150px;
+}
+.reportCardBody{
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+    margin-bottom: 20px;
+    white-space: normal;
+    word-wrap: break-word;
+    border-radius: 15px;
+    height:100%;
+    min-height: 275px;
+    // width: 150px;
+}
+.row{
+    margin-right: -12px !important;
+    margin-left: -12px !important;
+}
+.md12{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+.mrginLeft{
+    margin-left: 10px;
+}
+.fontCss{
+    font-size: 26px;
+}
+.fontCss1{
+    font-size: 36px;
+}
+@media screen and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+        .fontCss{
+            font-size: 16px;
+        }
+        .fontCss1{
+            font-size: 22px;
+        }
+}

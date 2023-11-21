@@ -1,0 +1,28 @@
+<div class="topbar">
+  <div class="mr-auto">
+    <div class="text-grey-6 font-size-24">
+      <strong *ngIf="entityName">{{entityName}}</strong>
+      <!-- <strong *ngIf="!companyName">Digital Cerebra Platform</strong> -->
+    </div>
+  <!-- <cui-topbar-search></cui-topbar-search> -->
+  </div>
+  <div class="mr-4 d-none d-md-block">    
+    <!-- <cui-topbar-issues-history></cui-topbar-issues-history> -->
+  </div>
+  <div class="mb-0 mr-auto d-xl-block d-none"> 
+    <!-- <cui-topbar-project-management></cui-topbar-project-management> -->
+  </div>
+  <div class="mr-4 d-none d-sm-block">
+    <strong *ngIf="userData">Welcome {{userData.name}} ({{userData.role}})</strong>
+    <!-- <cui-topbar-actions></cui-topbar-actions> -->
+  </div>
+  <div class="mr-4 d-none d-sm-block">
+    <cui-topbar-language-switcher></cui-topbar-language-switcher>
+  </div>
+  <!-- <div class="mr-4 d-none d-sm-block">
+    <cui-topbar-actions></cui-topbar-actions>
+  </div> -->
+  <div>
+    <cui-topbar-user-menu></cui-topbar-user-menu>
+  </div>
+</div>

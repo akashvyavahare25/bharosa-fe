@@ -1,0 +1,47 @@
+<div class="home-page file-height">
+
+<div class="card my-2" >
+    <div class="col-md-12 margin-auto text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <div class="text-center sub-title">Welcome to the Oona Insurance Financial Data Management Platform</div>
+                 -->
+                 <div class="hello-title">
+                    Hello, {{userData.name}}
+                 </div>
+                 <!-- <div class="sub-title">Welcome to the Oona Insurance Financial Data Management Platform</div> -->
+                 <div class="sub-title">Welcome to {{entityName}} Dashboard
+            </div>
+            <div class="col-md-12">
+                <!-- <div class="subsub-title"> - where data meets intelligence</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="card" *ngIf="visible">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header"> What would you like to do today?</div>
+        </div>
+        <div class="col-md-12">
+            <div class="row" *ngIf="menuDataActivated.length > 0">
+                <div class="col-md-2 mrginLeft" *ngFor="let item of menuDataActivated">
+                
+                    <div class="cursor-pointer text-center">
+                        <div>
+                            <div class="col-md-12 md12"> 
+                                <button (click)="openReport(item.url)" nz-button nzType="primary" [nzSize]="'small'" class="cardBody">
+                                    <strong>{{ item.title }}</strong>
+                                </button>         
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
